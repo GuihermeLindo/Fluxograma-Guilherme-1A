@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Em busca da magia ancestral</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Em busca da magia ancestral</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <main>
-        <div class="passo" id="passo-0">
-            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
-            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
-        </div>
-        <div class="passo" id="passo-1">
-            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
-            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
-        </div>
-    </main>
+  <main>
+    <div class="passo ativo" id="passo-0">
+      <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
+      <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
+      <button class="btn-proximo" data-proximo="2">Pernambuco</button>
+    </div>
 
+    <div class="passo" id="passo-1">
+      <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
+      <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
+      <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+    </div>
 
+    <div class="passo" id="passo-2">
+      <p>Você decide ir até Pernambuco. No mercado de Olinda, um vendedor misterioso te entrega uma pedra brilhante com inscrições antigas.</p>
+      <button class="btn-proximo" data-proximo="5">Examinar a pedra com uma lupa</button>
+      <button class="btn-proximo" data-proximo="4">Ignorar e ir embora</button>
+    </div>
 
+    <div class="passo" id="passo-3">
+      <p>No topo do Pico da Tijuca, você encontra uma inscrição entalhada na pedra com coordenadas. Parece que há mais pela frente!</p>
+      <button class="btn-proximo" data-proximo="6">Seguir as coordenadas</button>
+    </div>
+
+    <div class="passo" id="passo-4">
+      <p>Você voltou para casa. Quem sabe um dia tente novamente... Fim da aventura.</p>
+    </div>
+
+    <div class="passo" id="passo-5">
+      <p>Ao examinar a pedra, você vê símbolos que se alinham com os mapas da carta antiga. Isso te leva até uma trilha secreta nas montanhas.</p>
+      <button class="btn-proximo" data-proximo="6">Seguir pela trilha secreta</button>
+    </div>
+
+    <div class="passo" id="passo-6">
+      <p>Parabéns! Após seguir todas as pistas, você encontrou a cidade perdida! Ela brilha com cristais e é cercada por natureza exuberante. Fim da jornada... ou será um novo começo?</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
